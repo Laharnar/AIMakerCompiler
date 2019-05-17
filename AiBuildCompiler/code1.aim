@@ -1,0 +1,29 @@
+﻿PlayerAttacking=1   type
+ Boss dodge back
+
+PlayerAttacking=2   type
+ Boss block
+
+PlayerShielding=1  true         vartypes
+ 10<Distance(Boss,Player)<20
+ Boss attack 4
+
+PlayerStandby
+ Boss CircleAroundPlayer
+
+PlayerStandbyDuration>10
+ Boss attack choose(1,2,3) choose(1,2,3)
+
+BossHP<40%
+ Boss set rage mode 1
+
+BossHP<10%
+ Boss KeepDistance
+
+PlayerShieldHP<50%
+ Boss attack 6
+ Boss dash sideways random
+ Boss attack(choose(4,5,7))
+
+BossHP>90%
+ Boss taunt

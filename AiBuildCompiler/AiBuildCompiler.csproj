@@ -42,11 +42,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abs\Abstr.cs" />
+    <Compile Include="Abs\AbsArg.cs" />
+    <Compile Include="Abs\AbsArgs.cs" />
+    <Compile Include="Abs\AbsExpr.cs" />
+    <Compile Include="Abs\AbsExprs.cs" />
+    <Compile Include="Abs\AbsFunCall.cs" />
+    <Compile Include="Abs\AbsTree.cs" />
+    <Compile Include="Importer.cs" />
+    <Compile Include="Interpreter\Interpreter.cs" />
+    <Compile Include="LexAn\LexAn.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report.cs" />
+    <Compile Include="LexAn\Symbol.cs" />
+    <Compile Include="LexAn\Token.cs" />
+    <Compile Include="SemAn\NameChecker.cs" />
+    <Compile Include="SemAn\SemAn.cs" />
+    <Compile Include="SemAn\SymbTable.cs" />
+    <Compile Include="Synan.cs" />
+    <Compile Include="Visitor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="astTest.log" />
+    <None Include="code1.aim" />
+    <None Include="code2.log" />
+    <None Include="lexanTest.log" />
+    <None Include="astTest.aim" />
+    <None Include="semanTest.log" />
+    <None Include="synanTest.aim" />
+    <None Include="lexanTest.aim" />
+    <None Include="synanTest.log" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="code2.aim" />
+    <None Include="semanTest.aim" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

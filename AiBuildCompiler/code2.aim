@@ -1,0 +1,36 @@
+﻿life>=70%
+	dist>1m
+	rush at player
+
+	dist<1m
+		player atks defend
+		else atk
+		wait 1sec repeat
+
+70>life>=20%
+	change weapon (axe)
+		dist>2m, Spin is on cd
+			
+			Spin is on cd
+			keep distance
+			else
+			taunt
+			wait for player to come
+
+		dist<2m
+		use skill "Spin"
+			Spin is on cd
+			keep distance
+
+		Spin is underway
+		rush at player
+
+		Spin ends
+		put it on cd
+
+life<20%
+	dist>3m
+	throw weapons, rocks, tress...
+
+	dist<3m
+	run away
